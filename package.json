@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack src/app.js -o public/bundle.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting"
   },
   "keywords": [],
   "author": "",
